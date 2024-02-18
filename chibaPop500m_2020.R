@@ -1,8 +1,12 @@
-library(sf)
-library(rmapshaper)
-library(tidyverse)
-library(ggplot2)
-library(ggthemes)
+
+if (!require("pacman")) {
+  install.packages("pacman")}
+pacman::p_load(
+  tidyverse,
+  sf,
+  rmapshaper,
+  ggthemes,
+  ggpmisc)
 
 # 日本地図を読み込んで千葉県を抽出
 #
